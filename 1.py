@@ -76,7 +76,7 @@ def main():
         if req.get(r'https://graph.microsoft.com/v1.0/me/outlook/masterCategories',headers=headers).status_code == 200:
             num1+=1
             print('10调用成功'+str(num1)+'次')
-                if req.get(r'https://graph.microsoft.com/v1.0/me/onenote/notebooks',headers=headers).status_code == 200:
+        if req.get(r'https://graph.microsoft.com/v1.0/me/onenote/notebooks',headers=headers).status_code == 200:
             num1+=1
             print('11调用成功'+str(num1)+'次')
         if req.get(r'https://graph.microsoft.com/v1.0/me/onenote/notebooks',headers=headers).status_code == 200:
